@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil shalman</title>
+
+    <!-- Penulisan CSS cara 1: INTERNAL CSS -->
+    <style>
+        /* --- Pengaturan Umum Halaman --- */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #f0f4f8, #d0e0f0);
+            color: #3bae11;
+        }
+
+        /* --- Flexbox Container Utama --- */
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: #2664b5;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 4px solid #0b96a5; /* Box Model (border) */
+        }
+
+        /* --- Navigasi --- */
+        nav {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            border-bottom: 2px solid #ddd; /* Box Model (border) */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #004aad;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Efek hover pada menu */
+        nav a:hover {
+            color: white;
+            background-color: #004aad;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* --- Tata Letak Konten Utama --- */
+        main {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            gap: 20px;
+            background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=60');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* --- Konten utama --- */
+        .content {
+            flex: 3;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 2px solid #7f00ad;
+            padding: 20px; /* Box Model (padding) */
+            margin: 10px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .content:hover {
+            color: white;
+            background-color: #004aad;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+
+        /* --- Sidebar --- */
+        .sidebar {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.9);
+             border: 2px solid #0820f7;
+            padding: 15px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .sidebar:hover {
+            color: white;
+            background-color: #7f00ad;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #0e37b2;
+            color: rgb(201, 133, 39);
+            text-align: center;
+            padding: 15px;
+            border-top: 4px solid #00a993cb;
+             transition: 0.3s;
+        }
+        /* efek hover pada content */
+        .footer:hover {
+            color: white;
+            background-color: #e1680c;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        /* --- Responsif --- */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1>my profil</h1>
+            <p>Selamat datang di halaman profil saya</p>
+        </header>
+
+        <!-- NAVIGASI -->
+        <nav>
+            <a href="#1">Tentang</a>
+            <a href="#2">profil</a>
+            <a href="#3">sosmed</a>
+        </nav>
+
+        <!-- KONTEN UTAMA & SIDEBAR -->
+        <main>
+            <aside class="sidebar">
+                <div id="2"provil>
+                <h3>Profil Singkat</h3>
+                <img src="shalman.jpg" alt="photo Profil"
+                          style="width:150px; height:150px; border-radius:50%; object-fit:cover; display:block; margin:20px auto; border:3px solid #007bff;">
+                </style>
+                <ul>
+                    <li>Nama: shalman</li>
+                    <li>umur: 19 thn</li>
+                    <li>Hobi: nonton film</li>
+                    <li>alamat:Cirebon,jawa barat</li>
+                    <li>nim:2511080006</li>
+                </ul>
+            </aside>
+            <section class="content">
+                <div id="1"tentang>
+                <h2 style="text-align: center;">Tentang Saya</h2> <!-- Penulisan CSS cara 2: INLINE -->
+                <p>
+                    Nama saya <strong>shalman</strong>. saya asal dari cirebon jawa barat saya juga lulusan ponpes salafy dari tahun 2021-2024 lalu saya lanjut kuliah di <strong>stikom el-rahma</strong> yaitu di bogor agar saya bisa memahami ilmu komputer dan saya juga ingin bisa jago mengoding seperti <strong>pak yusuf</strong> dan saya juga memiliki ke inginan bisa membuat aplikasi yang bisa bermanfaat bagi ke banyakan orang baik di dalam negeri atau pun di luar negeri.
+                </p>
+            </section>
+            <body>
+             <aside class="sidebar">
+               <div>
+                 <div id="3"sosmed>
+                    <h2>sosmed</h2> 
+                   <ul>
+                        <li><a href="https://www.instagram.com/shalmanmaulana7?igsh=MTUxYmhwYzZ3aju=">instagram</a></li>
+                        <li><a href="https://www.facebook.com/share/14R8FsAjgjQ/">facebook</a></li>
+                        <li><a href="https://wa.me/6283865491023">whatsapp</a></li>
+                   </ul>
+              </div>
+             </aside>
+            </body>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>@2025 shalaman | Hubungi:<a href="mailto:Salmannmaulana2006@gmail.com" style="color: white;">Email Saya</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
